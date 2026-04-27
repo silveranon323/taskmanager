@@ -1,5 +1,9 @@
-<h1 style="color: lightcoral;">
-  Task Manager
-</h1>
-<app-task-input (taskAdded)="onTaskAdded($event)"></app-task-input>
-<app-task-list [tasks]="tasks"></app-task-list>
+<h1>Counter App</h1>
+
+<app-counter-controls 
+  (increment)="onIncrement()" 
+  (decrement)="onDecrement()"
+  (reset)="onReset()">
+</app-counter-controls>
+
+<app-counter-display [count]="count"></app-counter-display>

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TaskListComponent } from './task-list.component';
+import { CounterDisplayComponent } from './counter-display.component';
 
-describe('TaskListComponent', () => {
-  let component: TaskListComponent;
-  let fixture: ComponentFixture<TaskListComponent>;
+describe('CounterDisplayComponent', () => {
+  let component: CounterDisplayComponent;
+  let fixture: ComponentFixture<CounterDisplayComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TaskListComponent]
+      imports: [CounterDisplayComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(TaskListComponent);
+    fixture = TestBed.createComponent(CounterDisplayComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
