@@ -1,5 +1,7 @@
-<h1 style="color: lightcoral;">
-  Task Manager
+
+<h1>
+  Message App
 </h1>
-<app-task-input (taskAdded)="onTaskAdded($event)"></app-task-input>
-<app-task-list [tasks]="tasks"></app-task-list>
+
+<app-sender (messageEvent)="receivedMessage($event)"></app-sender>
+<app-receiver [receivedMessage]="message"></app-receiver>
